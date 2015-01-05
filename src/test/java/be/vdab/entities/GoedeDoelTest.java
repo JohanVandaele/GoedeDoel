@@ -38,22 +38,22 @@ public class GoedeDoelTest {
 		assertEquals(new GoedeDoel("CLINICLOWNS"), doel);
 	}
 	
-	@Test
-	public void goedeDoelenMetVerschillendeNaamMoetenVolgensEqualsVerschillendZijn()
-	{
-		assertNotEquals(new GoedeDoel("Unicef"), doel);
-		// extra import: import static org.junit.Assert.assertNotEquals;
-	}
-	
-	@Test
-	public void goedDoelVerschiltVanEenObjectMetEenAnderType()
-	{
-		assertNotEquals(doel, new Date());
-	}
-	
-	@Test
-	public void goedeDoelenHashCode()
-	{
-		assertTrue(new GoedeDoel("Unicef").hashCode()==new GoedeDoel("unicef").hashCode() );
-	}
+//	@Test
+//	public void goedeDoelenMetVerschillendeNaamMoetenVolgensEqualsVerschillendZijn()
+//	{
+//		assertNotEquals(new GoedeDoel("Unicef"), doel);
+//		// extra import: import static org.junit.Assert.assertNotEquals;
+//	}
+//	
+//	@Test
+//	public void goedDoelVerschiltVanEenObjectMetEenAnderType()
+//	{
+//		assertNotEquals(doel, new Date());
+//	}
+//	
+//	@Test
+//	public void goedeDoelenHashCode()
+//	{
+//		assertTrue(new GoedeDoel("Unicef").hashCode()==new GoedeDoel("unicef").hashCode() );
+//	}
 }

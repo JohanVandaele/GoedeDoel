@@ -1,11 +1,11 @@
-/**
-* Een <strong>goed doel</strong> waarvoor men geld inzamelt
-* @author Joe Dalton
-*/
 package be.vdab.entities;
 
 import java.math.BigDecimal;
 
+/**
+* Een <strong>goed doel</strong> waarvoor men geld inzamelt
+* @author Joe Dalton
+*/
 public class GoedeDoel
 {
 	private final String naam;
