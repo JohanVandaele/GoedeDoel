@@ -1,3 +1,7 @@
+/**
+* Een <strong>goed doel</strong> waarvoor men geld inzamelt
+* @author Joe Dalton
+*/
 package be.vdab.entities;
 
 import java.math.BigDecimal;
@@ -8,16 +12,28 @@ public class GoedeDoel
 	//private BigDecimal opgebracht;
 	private BigDecimal opgebracht = BigDecimal.ZERO;
 	
+	/**
+	* Maakt een GoedeDoel object
+	* @param naam De naam van het goede doel
+	*/
 	public GoedeDoel(String naam)
 	{
 		this.naam = naam;
 	}
 	
+	/**
+	* Geeft de naam terug
+	* @return de naam
+	*/
 	public String getNaam()
 	{
 		return naam;
 	}
 	
+	/**
+	* Geeft terug hoeveel &euro; dit doel heeft opgebracht
+	* @return het opgebracht bedrag
+	*/
 	public BigDecimal getOpgebracht()
 	{
 		return opgebracht;
