@@ -50,9 +50,9 @@ public class GoedeDoel
 		return ((GoedeDoel) object).naam.equalsIgnoreCase(naam);
 	}
 	
-	@Override
-	public int hashCode()
-	{
-		return naam.toUpperCase().hashCode();
-	}
+//	@Override
+//	public int hashCode()
+//	{
+//		return naam.toUpperCase().hashCode();
+//	}
 }
