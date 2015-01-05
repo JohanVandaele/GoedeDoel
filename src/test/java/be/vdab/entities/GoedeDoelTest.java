@@ -2,6 +2,7 @@ package be.vdab.entities;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -48,5 +49,11 @@ public class GoedeDoelTest {
 	public void goedDoelVerschiltVanEenObjectMetEenAnderType()
 	{
 		assertNotEquals(doel, new Date());
+	}
+	
+	@Test
+	public void goedeDoelenHashCode()
+	{
+		assertTrue(new GoedeDoel("Unicef").hashCode()==new GoedeDoel("unicef").hashCode() );
 	}
 }
