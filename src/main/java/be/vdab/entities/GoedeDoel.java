@@ -22,4 +22,15 @@ public class GoedeDoel
 	{
 		return opgebracht;
 	}
+	
+	@Override
+	public boolean equals(Object object)
+	{
+		if (!(object instanceof GoedeDoel))
+		{
+			return false;
+		}
+		
+		return ((GoedeDoel) object).naam.equalsIgnoreCase(naam);
+	}
 }
